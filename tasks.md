@@ -6,12 +6,12 @@
 
 ## Этап 0. Подготовка проекта
 
-- [ ] 0.1. Инициализировать Vite + React + TypeScript проект (`npm create vite@latest . -- --template react-ts`).
-- [ ] 0.2. Установить зависимости: `react-router-dom`, `zustand`, `@tanstack/react-query`, `tailwindcss`, `lucide-react`.
-- [ ] 0.3. Настроить Tailwind CSS (postcss, base-стили, сброс).
-- [ ] 0.4. Настроить пути/алиасы (`@/…`) в `tsconfig` и `vite.config.ts`.
-- [ ] 0.5. Настроить ESLint + Prettier, добавить npm-скрипты: `dev`, `build`, `lint`.
-- [ ] 0.6. Создать каркас каталогов по ТЗ: `src/app`, `src/components/{layout,ui,jobs,tasks,logs,settings}`, `src/features/{jobs,tasks,logs,settings}`, `src/lib/{api,utils}`, `src/types`, `src/mocks`.
+- [x] 0.1. Инициализировать Vite + React + TypeScript проект (`npm create vite@latest . -- --template react-ts`).
+- [x] 0.2. Установить зависимости: `react-router-dom`, `zustand`, `@tanstack/react-query`, `tailwindcss`, `lucide-react`.
+- [x] 0.3. Настроить Tailwind CSS (postcss, base-стили, сброс).
+- [x] 0.4. Настроить пути/алиасы (`@/…`) в `tsconfig` и `vite.config.ts`.
+- [x] 0.5. Настроить ESLint + Prettier, добавить npm-скрипты: `dev`, `build`, `lint`.
+- [x] 0.6. Создать каркас каталогов по ТЗ: `src/app`, `src/components/{layout,ui,jobs,tasks,logs,settings}`, `src/features/{jobs,tasks,logs,settings}`, `src/lib/{api,utils}`, `src/types`, `src/mocks`.
 
 **Готово, когда:** `npm run dev` открывает пустую страницу без ошибок, `npm run build` проходит.
 
