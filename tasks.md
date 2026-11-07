@@ -31,11 +31,11 @@
 
 ## Этап 2. Mock API-слой и контракт `harnessApi`
 
-- [ ] 2.1. Реализовать интерфейс/контракт API в `lib/api`: `startJob(requirement, options)`, `getJobs(filters)`, `getJobById(id)`, `pauseJob(id)`, `resumeJob(id)`, `cancelJob(id)`, `retryJob(id)`, `getTasks(jobId?)`, `getLogs(jobId?, filters)`, `subscribeToJobEvents(jobId, callback)`, `getRuntimeStatus()`.
-- [ ] 2.2. Написать mock-реализацию в `src/mocks`: генерация jobs/tasks/logs, имитация задержек сети, прогресса и статусов.
-- [ ] 2.3. Реализовать имитацию streaming-событий (заготовку под WebSocket/SSE): подписка на job-события через setTimeout/интервал, изменение прогресса и запись логов в реальном времени.
-- [ ] 2.4. Реализовать `getRuntimeStatus()` с состояниями Connected / Disconnected / Reconnecting и периодической сменой для демо.
-- [ ] 2.5. Добавить фабрику/переключатель провайдера (`createHarnessApi`): mock ↔ real, чтобы экраны не зависели от реализации (замена без переписывания UI).
+- [x] 2.1. Реализовать интерфейс/контракт API в `lib/api`: `startJob(requirement, options)`, `getJobs(filters)`, `getJobById(id)`, `pauseJob(id)`, `resumeJob(id)`, `cancelJob(id)`, `retryJob(id)`, `getTasks(jobId?)`, `getLogs(jobId?, filters)`, `subscribeToJobEvents(jobId, callback)`, `getRuntimeStatus()`.
+- [x] 2.2. Написать mock-реализацию в `src/mocks`: генерация jobs/tasks/logs, имитация задержек сети, прогресса и статусов.
+- [x] 2.3. Реализовать имитацию streaming-событий (заготовку под WebSocket/SSE): подписка на job-события через setTimeout/интервал, изменение прогресса и запись логов в реальном времени.
+- [x] 2.4. Реализовать `getRuntimeStatus()` с состояниями Connected / Disconnected / Reconnecting и периодической сменой для демо.
+- [x] 2.5. Добавить фабрику/переключатель провайдера (`createHarnessApi`): mock ↔ real, чтобы экраны не зависели от реализации (замена без переписывания UI).
 
 **Готово, когда:** вызовы API через mock работают асинхронно; события job приходят подписчикам; контракт документирован в `README`.
 
