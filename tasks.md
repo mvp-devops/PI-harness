@@ -19,11 +19,11 @@
 
 ## Этап 1. Дизайн-система и базовая инфраструктура
 
-- [ ] 1.1. Определить дизайн-токены в Tailwind-конфиге: colors (нейтральная палитра + один акцент — тёмно-зелёный или индиго), spacing, radii (8–12 px), shadows, typography (system font stack / Inter, mono для ID/команд/логов).
-- [ ] 1.2. Реализовать темы: light (по умолчанию), dark, system. Хранение выбора в Zustand, применение через CSS-переменные / `class="dark"`.
-- [ ] 1.3. Создать базовые UI-компоненты в `components/ui`: Button, Input, Textarea, Select, Badge (статус), Card, Modal (подтверждение), Toast, Tabs, ProgressBar, Checkbox, EmptyState, Spinner.
-- [ ] 1.4. Прокинуть типы домена в `src/types`: `Job`, `JobStatus` (Draft, Queued, Running, Paused, Waiting approval, Completed, Failed, Cancelled), `Task`, `TaskStatus`, `LogEntry` (level: info/warn/error), `RuntimeStatus`, `JobFilters`, `LogFilters`.
-- [ ] 1.5. Добавить утилиты в `lib/utils`: форматирование времени/длительности, статусные бейджи (цвет + иконка + текст — различимы не только цветом), cn-хелпер для классов.
+- [x] 1.1. Определить дизайн-токены в Tailwind-конфиге: colors (нейтральная палитра + один акцент — тёмно-зелёный или индиго), spacing, radii (8–12 px), shadows, typography (system font stack / Inter, mono для ID/команд/логов).
+- [x] 1.2. Реализовать темы: light (по умолчанию), dark, system. Хранение выбора в Zustand, применение через CSS-переменные / `class="dark"`.
+- [x] 1.3. Создать базовые UI-компоненты в `components/ui`: Button, Input, Textarea, Select, Badge (статус), Card, Modal (подтверждение), Toast, Tabs, ProgressBar, Checkbox, EmptyState, Spinner.
+- [x] 1.4. Прокинуть типы домена в `src/types`: `Job`, `JobStatus` (Draft, Queued, Running, Paused, Waiting approval, Completed, Failed, Cancelled), `Task`, `TaskStatus`, `LogEntry` (level: info/warn/error), `RuntimeStatus`, `JobFilters`, `LogFilters`.
+- [x] 1.5. Добавить утилиты в `lib/utils`: форматирование времени/длительности, статусные бейджи (цвет + иконка + текст — различимы не только цветом), cn-хелпер для классов.
 
 **Готово, когда:** токены и UI-кит доступны для экранов; тёмная тема переключается вручную.
 
