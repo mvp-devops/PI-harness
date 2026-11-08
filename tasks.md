@@ -138,11 +138,11 @@
 
 ## Этап 11. Экран Settings
 
-- [ ] 11.1. Подключение к Pi runtime: URL, token, кнопка Test connection.
-- [ ] 11.2. Тема: Light / Dark / System.
-- [ ] 11.3. Автоскролл логов: on/off (влияет на log viewers).
-- [ ] 11.4. Confirm before destructive actions: on/off (влияет на модальные подтверждения).
-- [ ] 11.5. Токен: не хранить в открытом виде в localStorage; предупреждение и подсказка про безопасное хранение.
+- [x] 11.1. Подключение к Pi runtime: URL, token, кнопка Test connection.
+- [x] 11.2. Тема: Light / Dark / System.
+- [x] 11.3. Автоскролл логов: on/off (влияет на log viewers).
+- [x] 11.4. Confirm before destructive actions: on/off (влияет на модальные подтверждения).
+- [x] 11.5. Токен: не хранить в открытом виде в localStorage; предупреждение и подсказка про безопасное хранение.
 
 **Готово, когда:** настройки сохраняются и реально влияют на поведение UI.
 
