@@ -77,12 +77,12 @@
 
 ## Этап 6. Экран Jobs
 
-- [ ] 6.1. Таблица/список: Job ID, название/requirement, статус, прогресс, agent/model, started, duration.
-- [ ] 6.2. Фильтры по статусу + поиск по названию/ID.
-- [ ] 6.3. Действия в строке: Open, Pause/Resume, Cancel, Retry — через optimistic UI.
-- [ ] 6.4. Подтверждение перед Cancel и Retry (modal; учитывается настройка «Confirm before destructive actions»).
-- [ ] 6.5. Пагинация или infinite scroll.
-- [ ] 6.6. Компактный toast при ошибках действий.
+- [x] 6.1. Таблица/список: Job ID, название/requirement, статус, прогресс, agent/model, started, duration.
+- [x] 6.2. Фильтры по статусу + поиск по названию/ID.
+- [x] 6.3. Действия в строке: Open, Pause/Resume, Cancel, Retry — через optimistic UI.
+- [x] 6.4. Подтверждение перед Cancel и Retry (modal; учитывается настройка «Confirm before destructive actions»).
+- [x] 6.5. Пагинация или infinite scroll.
+- [x] 6.6. Компактный toast при ошибках действий.
 
 **Готово, когда:** фильтры/поиск/пагинация работают, действия меняют статус job через mock-API.
 
