@@ -105,10 +105,10 @@
 
 ## Этап 8. Экран New job
 
-- [ ] 8.1. Форма: textarea «Requirement» (обязательное), select модели/agent profile, режим запуска Interactive / Autonomous, переключатель «Require approval before write operations».
-- [ ] 8.2. Валидация: нельзя запустить пустую задачу.
-- [ ] 8.3. Кнопки Cancel и Start job; после запуска — переход на Job details созданного job.
-- [ ] 8.4. Loading state на кнопке Start job.
+- [x] 8.1. Форма: textarea «Requirement» (обязательное), select модели/agent profile, режим запуска Interactive / Autonomous, переключатель «Require approval before write operations».
+- [x] 8.2. Валидация: нельзя запустить пустую задачу.
+- [x] 8.3. Кнопки Cancel и Start job; после запуска — переход на Job details созданного job.
+- [x] 8.4. Loading state на кнопке Start job.
 
 **Готово, когда:** новый job создаётся через `startJob` и открывается в деталях.
 
