@@ -56,9 +56,9 @@
 
 ## Этап 4. Состояние и серверное состояние
 
-- [ ] 4.1. Настроить TanStack Query для серверных данных (jobs, tasks, logs, runtime status) + Zustand для UI-состояния (тема, настройки, фильтры, open modals).
-- [ ] 4.2. Интегрировать подписку `subscribeToJobEvents` с Query-кэшем: live-обновление деталей job, списков и логов.
-- [ ] 4.3. Реализовать optimistic UI для Pause / Resume / Cancel / Retry с откатом при ошибке.
+- [x] 4.1. Настроить TanStack Query для серверных данных (jobs, tasks, logs, runtime status) + Zustand для UI-состояния (тема, настройки, фильтры, open modals).
+- [x] 4.2. Интегрировать подписку `subscribeToJobEvents` с Query-кэшем: live-обновление деталей job, списков и логов.
+- [x] 4.3. Реализовать optimistic UI для Pause / Resume / Cancel / Retry с откатом при ошибке.
 
 **Готово, когда:** данные экранов приходят из query-хуков; live-обновления видны; действия job обновляют UI оптимистично.
 

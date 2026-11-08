@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { AppLayout } from '@/components/layout'
 import { ToastHost } from '@/components/ui'
 import { ThemeProvider } from '@/features/settings/ThemeProvider'
+import { useJobEventsSync } from '@/lib/api/useJobEventsSync'
 import DashboardPage from '@/features/jobs/DashboardPage'
 import JobsPage from '@/features/jobs/JobsPage'
 import NewJobPage from '@/features/jobs/NewJobPage'
@@ -20,10 +21,16 @@ const queryClient = new QueryClient({
   },
 })
 
+function EventSync() {
+  useJobEventsSync()
+  return null
+}
+
 export default function App() {
   return (
     <ThemeProvider>
       <QueryClientProvider client={queryClient}>
+        <EventSync />
         <BrowserRouter>
           <AppLayout>
             <Routes>
