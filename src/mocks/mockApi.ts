@@ -160,10 +160,12 @@ class MockHarnessApi implements HarnessApi {
         title,
         status: i === 0 ? 'in_progress' : 'pending',
       })),
-      currentStep: planTitles[0],
+      currentStep: planTitles[0] as string,
     }
     this.jobs.unshift(job)
-    this.tasks.push(...makeTasks(id, 0, 0).map((t, i) => ({ ...t, title: planTitles[i % planTitles.length] })))
+    this.tasks.push(
+      ...makeTasks(id, 0, 0).map((t, i) => ({ ...t, title: planTitles[i % planTitles.length] as string })),
+    )
     this.log(id, 'info', `Job queued with model ${options.model}`)
     // Simulate the runner picking the job up shortly after.
     window.setTimeout(() => {

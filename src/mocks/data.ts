@@ -44,7 +44,7 @@ const LOG_MESSAGES = [
 ]
 
 function pick<T>(arr: T[], rnd: () => number): T {
-  return arr[Math.floor(rnd() * arr.length)]
+  return arr[Math.floor(rnd() * arr.length)] as T
 }
 
 function isoAgo(ms: number): string {
@@ -68,7 +68,7 @@ function makeTasks(jobId: string, createdMs: number, progress: number): Task[] {
     return {
       id: `${jobId}-t${i + 1}`,
       jobId,
-      title: TASK_TITLES[i % TASK_TITLES.length],
+      title: TASK_TITLES[i % TASK_TITLES.length] as string,
       status,
       assignee: pick(AGENTS, rnd),
       updatedAt: isoAgo(createdMs - i * 60_000),
@@ -103,7 +103,7 @@ function makeArtifacts(jobId: string): Artifact[] {
   return Array.from({ length: n }, (_, i) => ({
     id: `${jobId}-a${i + 1}`,
     jobId,
-    path: paths[(i * 7 + jobId.length) % paths.length],
+    path: paths[(i * 7 + jobId.length) % paths.length] as string,
     change: rnd() > 0.5 ? 'modified' : 'created',
     status: rnd() > 0.15 ? 'ok' : 'failed',
   }))
@@ -141,7 +141,7 @@ export function buildMockJobs(): Job[] {
     }))
     return {
       id,
-      requirement: REQUIREMENTS[i % REQUIREMENTS.length],
+      requirement: REQUIREMENTS[i % REQUIREMENTS.length] as string,
       status,
       progress,
       model: pick(MODELS, rnd),

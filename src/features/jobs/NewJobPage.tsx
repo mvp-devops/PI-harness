@@ -8,8 +8,8 @@ import { cn } from '@/lib/utils'
 import type { JobMode, StartJobOptions } from '@/types'
 import { Rocket } from 'lucide-react'
 
-const MODELS = ['glm-5.3-flash', 'glm-4.6', 'deepseek-v3.2']
-const AGENT_PROFILES = ['code-agent', 'ops-agent', 'docs-agent']
+const MODELS = ['glm-5.3-flash', 'glm-4.6', 'deepseek-v3.2'] as const
+const AGENT_PROFILES = ['code-agent', 'ops-agent', 'docs-agent'] as const
 
 const MODE_OPTIONS: Array<{ value: JobMode; label: string; hint: string }> = [
   { value: 'interactive', label: 'Interactive', hint: 'Пауза на ключевых шагах, больше контроля.' },
@@ -21,8 +21,8 @@ export default function NewJobPage() {
   const queryClient = useQueryClient()
 
   const [requirement, setRequirement] = useState('')
-  const [model, setModel] = useState(MODELS[0])
-  const [agentProfile, setAgentProfile] = useState(AGENT_PROFILES[0])
+  const [model, setModel] = useState<string>(MODELS[0])
+  const [agentProfile, setAgentProfile] = useState<string>(AGENT_PROFILES[0])
   const [mode, setMode] = useState<JobMode>('interactive')
   const [requireApproval, setRequireApproval] = useState(true)
   const [touched, setTouched] = useState(false)

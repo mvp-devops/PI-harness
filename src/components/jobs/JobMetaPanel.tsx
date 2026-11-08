@@ -38,7 +38,6 @@ export function JobMetaPanel({ job }: { job: Job }) {
   const [events, setEvents] = useState<JobEvent[]>([])
 
   useEffect(() => {
-    setEvents([])
     const subscription = harnessApi.subscribeToJobEvents(job.id, (event) => {
       setEvents((prev) => [...prev.slice(-7), event])
     })
