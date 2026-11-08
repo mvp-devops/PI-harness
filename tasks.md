@@ -116,10 +116,10 @@
 
 ## Этап 9. Экран Tasks
 
-- [ ] 9.1. Единый список задач по всем jobs: task, job, status, assignee/agent, updated.
-- [ ] 9.2. Фильтры: All, Pending, In progress, Blocked, Done, Failed.
-- [ ] 9.3. Переход к связанному job из строки.
-- [ ] 9.4. Empty state.
+- [x] 9.1. Единый список задач по всем jobs: task, job, status, assignee/agent, updated.
+- [x] 9.2. Фильтры: All, Pending, In progress, Blocked, Done, Failed.
+- [x] 9.3. Переход к связанному job из строки.
+- [x] 9.4. Empty state.
 
 **Готово, когда:** список и фильтры работают, ссылки на job открываются.
 
