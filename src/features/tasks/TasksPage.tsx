@@ -2,7 +2,7 @@ import { useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { useJobs, useTasks } from '@/lib/api/hooks'
 import { PageHeader } from '@/components/layout'
-import { Card, EmptyState, Select, Spinner, StatusBadge } from '@/components/ui'
+import { Card, EmptyState, Spinner, StatusBadge } from '@/components/ui'
 import { formatRelative, TASK_STATUS_LABEL } from '@/lib/utils'
 import type { TaskStatus } from '@/types'
 
