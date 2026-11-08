@@ -11,14 +11,15 @@ interface TabsProps {
   active: string
   onChange: (id: string) => void
   ariaLabel?: string
+  className?: string
 }
 
-export function Tabs({ items, active, onChange, ariaLabel }: TabsProps) {
+export function Tabs({ items, active, onChange, ariaLabel, className }: TabsProps) {
   return (
     <div
       role="tablist"
       aria-label={ariaLabel}
-      className="flex gap-1 border-b border-neutral-200 dark:border-neutral-700"
+      className={cn('flex gap-1 border-b border-neutral-200 dark:border-neutral-700', className)}
     >
       {items.map((item) => {
         const selected = item.id === active
